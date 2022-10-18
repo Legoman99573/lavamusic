@@ -53,9 +53,9 @@ module.exports = {
         .editReply({ embeds: [embed] })
         .catch((err) => console.error("Promise Rejected At", err));
     }
-    if (pre[0].length > 3) {
+    if (pre[0].length > 2) {
       const embed = new EmbedBuilder()
-        .setDescription("You can't set a prefix with more than 3 characters!")
+        .setDescription("You can't set a prefix with more than 2 characters!")
         .setColor(client.embedColor);
       return await interaction
         .editReply({ embeds: [embed] })
